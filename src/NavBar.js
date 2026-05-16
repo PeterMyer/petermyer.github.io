@@ -1,39 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { socialLinks } from "./data/siteContent";
 
 export default function NavBar(){
     return (
-    <nav class="navbar navbar-expand-sm bg-light d-flex justify-content-between sticky-top">
-            <ul className="navbar-nav d-flex align-items-center">
-                <a className="navbar-brand" href="/">
+    <nav className="navbar navbar-expand-sm bg-light d-flex justify-content-between sticky-top portfolio-navbar" aria-label="Main navigation">
+            <ul className="navbar-nav d-flex align-items-center gap-2">
+                <Link className="navbar-brand" to="/" aria-label="Go to home page">
                     <img src="PM_logo.svg" alt="name_icon" width="75"/>
-                </a>
-                {/* <li className = "nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false"><strong>Projects</strong></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/projects">All Projects</a>
-                    <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/bookit">BookIt</a>
-                        <a class="dropdown-item" href="/byte">Byte</a>
-                    </div>
-                </li> */}
+                </Link>
                 <li className = "nav-item">
                     <strong>
-                        <a className="nav-link" href="#/projects">Projects</a>
+                        <Link className="nav-link" to="/projects">Projects</Link>
                     </strong>
                 </li>
 
                 <li className = "nav-item">
                     <strong>
-                        <a className="nav-link" href="#/about">About</a>
+                        <Link className="nav-link" to="/about">About</Link>
                     </strong>
                 </li>
             </ul>
-            <ul className="navbar-nav">
+            <ul className="navbar-nav nav-social-row">
                 <li className = "nav-item">
-                    <a className="nav-link" href="https://github.com/PeterMyer" ><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a className="nav-link" href={socialLinks.github} aria-label="Open GitHub profile" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li className = "nav-item">
-                    <a className="nav-link" href="https://www.linkedin.com/in/petermyer/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a className="nav-link" href={socialLinks.linkedin} aria-label="Open LinkedIn profile" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
         </nav>

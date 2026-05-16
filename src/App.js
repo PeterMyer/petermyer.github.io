@@ -5,14 +5,14 @@ import { Footer } from './Footer';
 
 function App() {
   return (
-    <div >
-      <header className='container-fluid'>
+    <div className='app-shell'>
+      <header className='container-fluid app-header p-0'>
         <NavBar/>
       </header>
-      <main className='container-fluid'>
+      <main className='container-fluid app-main'>
         <AppRoutes/>
       </main>
-      <Footer className="footer-component"/>
+      <Footer/>
     </div>
   );
 }
