@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
-  "short_name": "React App",
-  "name": "Create React App Sample",
-=======
   "short_name": "Peter Myer",
   "name": "Peter Myer Portfolio",
->>>>>>> 56c70a2e (Portfolio revamp: new design, routes, projects, and metadata)
   "icons": [
     {
       "src": "favicon.ico",
@@ -25,11 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-<<<<<<< HEAD
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-=======
   "theme_color": "#0b8f8a",
   "background_color": "#fffaf0"
->>>>>>> 56c70a2e (Portfolio revamp: new design, routes, projects, and metadata)
 }

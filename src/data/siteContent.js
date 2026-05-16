@@ -6,7 +6,7 @@ export const profile = {
     "I build thoughtful web products where design clarity and practical engineering work together.",
   focus:
     "Current focus: interactive education tools, habit systems, and AI-assisted workflows.",
-  contactEmail: "peter@petermyer.dev",
+  contactEmail: "peter.sr.myer@gmail.com",
 };
 
 export const aboutHighlights = [
